@@ -36,7 +36,7 @@ if initiative_filter == "Yes":
 elif initiative_filter == "No":
     filtered_df = filtered_df[filtered_df['Existence of initiatives and projects in the past five years to improve the tourism sector - exists'] == 0]
 
-st.subheader("🏨 Tourism Infrastructure by Town")
+st.subheader("🌇 Tourism Infrastructure by Town")
 fig1 = px.bar(
     filtered_df,
     x='Town',
@@ -48,7 +48,7 @@ fig1 = px.bar(
 fig1.update_layout(barmode='stack')
 st.plotly_chart(fig1, use_container_width=True)
 
-st.subheader("☕ Cafes vs Restaurants & Tourism Index")
+st.subheader("🥐Cafes vs 🍕Restaurants & Tourism Index")
 fig2 = px.scatter(
     filtered_df,
     x='Total number of cafes',
@@ -61,9 +61,9 @@ fig2 = px.scatter(
 fig2.update_traces(textposition='top center')
 st.plotly_chart(fig2, use_container_width=True)
 
-st.subheader("💡 Insights")
+st.subheader("💡🕵️‍♀️ Context & Insights")
 st.markdown("""
-- test Towns with higher numbers of cafes and restaurants tend to have a higher Tourism Index.
+- Towns with higher numbers of cafes and restaurants tend to have a higher Tourism Index.
 - Initiatives in the past five years slightly correlate with higher Tourism Index values.
 - Stacked bars show how hotels, guest houses, cafes, and restaurants contribute differently across towns.
 """)
