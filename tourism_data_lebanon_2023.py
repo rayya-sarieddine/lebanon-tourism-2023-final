@@ -36,12 +36,12 @@ if initiative_filter == "Yes":
 elif initiative_filter == "No":
     filtered_df = filtered_df[filtered_df['Existence of initiatives and projects in the past five years to improve the tourism sector - exists'] == 0]
 
-st.subheader("🌇 Towns split into 4 infrastructure categories")
+st.subheader("🌇 Tourism Infrastructure by Town")
 fig1 = px.bar(
     filtered_df,
     x='Town',
     y=['Total number of hotels', 'Total number of restaurants', 'Total number of cafes', 'Total number of guest houses'],
-    title="Tourism Infrastructure by Town",
+    title="Towns split into 4 infrastructure categories",
     labels={'value':'Number of Facilities','variable':'Facility Type'},
     text_auto=True
 )
