@@ -36,7 +36,7 @@ if initiative_filter == "Yes":
 elif initiative_filter == "No":
     filtered_df = filtered_df[filtered_df['Existence of initiatives and projects in the past five years to improve the tourism sector - exists'] == 0]
 
-st.subheader("🌇 Tourism Infrastructure by Town")
+st.subheader("🌇 Towns split into 4 infrastructure categories")
 fig1 = px.bar(
     filtered_df,
     x='Town',
@@ -48,7 +48,7 @@ fig1 = px.bar(
 fig1.update_layout(barmode='stack')
 st.plotly_chart(fig1, use_container_width=True)
 
-st.subheader("🥐Cafes vs 🍕Restaurants & Tourism Index")
+st.subheader("🥐Cafes vs 🍕Restaurants per Town")
 fig2 = px.scatter(
     filtered_df,
     x='Total number of cafes',
@@ -56,7 +56,7 @@ fig2 = px.scatter(
     size='Tourism Index',
     color='Existence of initiatives and projects in the past five years to improve the tourism sector - exists',
     hover_data=['Town'],
-    title='Cafes vs Restaurants per Town in Relation to Tourism Index'
+    title='In Relation to Tourism Index & Initiatives'
 )
 fig2.update_traces(textposition='top center')
 st.plotly_chart(fig2, use_container_width=True)
