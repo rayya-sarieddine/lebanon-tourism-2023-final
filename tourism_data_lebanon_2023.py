@@ -63,7 +63,7 @@ st.plotly_chart(fig2, use_container_width=True)
 
 st.subheader("💡 Insights")
 st.markdown("""
-- Towns with higher numbers of cafes and restaurants tend to have a higher Tourism Index.
+- test Towns with higher numbers of cafes and restaurants tend to have a higher Tourism Index.
 - Initiatives in the past five years slightly correlate with higher Tourism Index values.
 - Stacked bars show how hotels, guest houses, cafes, and restaurants contribute differently across towns.
 """)
