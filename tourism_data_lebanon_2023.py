@@ -63,7 +63,8 @@ st.plotly_chart(fig2, use_container_width=True)
 
 st.subheader("💡🕵️‍♀️ Context & Insights")
 st.markdown("""
-- Towns with higher numbers of cafes and restaurants tend to have a higher Tourism Index.
-- Initiatives in the past five years slightly correlate with higher Tourism Index values.
-- Stacked bars show how hotels, guest houses, cafes, and restaurants contribute differently across towns.
+- The "Tourism Infrastructure by Town" chart covers the overall diversity of hotels, guest houses, restaurants, and cafes.
+- The chart right below titled "Cafes vs Restaurants per Town" showcases the influence of the local initiatives in the last 5 years (like opening restaurants & cafes) to the tourism index per town.
+- Towns with a high tourism index but limited tourism infrastructure could indicate great prospects for new business ventures under the hospitality industry (including restaurants & cafes).
+- Towns with initiatives but no improved tourism index may indicate the need for town level marketing interventions to reach a wider audience and greater mass appeal.
 """)
